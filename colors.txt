@@ -59,3 +59,5 @@ to completely resolve this issue, we do this :
        3, git push
 
        now the conflict issue resolved.
+
+     ( someone disconnected with remote url , how can we reconnect it ? do this : git remote set-url origin <GITHUB_URL>)
