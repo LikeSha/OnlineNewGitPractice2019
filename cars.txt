@@ -138,4 +138,7 @@ If you are getting : access denied, 403 error, means that you are tyring to push
            git pull
 
            DONE ! everything is up to date !
-
+For differnet files, we just simply pull and push ,nothing wrong !
+the conflict only happend in same files different people udated different content in different place.
+  ( someone added something in remote resository, someone added in work stations.....
+  this is the casue of conflict ---- must update different things in same file !)
