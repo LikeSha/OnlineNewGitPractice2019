@@ -63,3 +63,5 @@ to completely resolve this issue, we do this :
 If you are getting : access denied, 403 error, means that you are tyring to push to the repo that is not yours
 ( you were not added as a collaborator or you are not the owner of this repo )
      ( someone disconnected with remote url , how can we reconnect it ? do this : git remote set-url origin <GITHUB_URL>)
+
+      In case of conflict, if there were modified different files, git can merge automatically.
