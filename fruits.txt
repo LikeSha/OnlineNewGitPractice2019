@@ -97,3 +97,9 @@ If you are getting : access denied, 403 error, means that you are tyring to push
       this conflict is caused by same file modification!
 
       then terminal showing recommendation message to us : " Please commit your changes or stash them before you merge."
+
+      After reading this message ,what we do ? We have to commit our changes ! it giving us hint already.
+
+            1, git add .
+            2, git commit -m " added new fruit"
+            3, git pull
