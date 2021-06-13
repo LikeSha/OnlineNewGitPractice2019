@@ -83,3 +83,13 @@ If you are getting : access denied, 403 error, means that you are tyring to push
       1, git add .
       2, git commit -m " added fruits"
       3, git push
+
+ Now the case  : we are at fruit file. my teammate just added " kiwi " in remote repository, but I just added " dragon fruit" in my work station .
+
+     so in remote repository ,we have : orange mango kiwi , in my own work station ,I have orange mango dragon fruit.
+
+     now : if I run " git pull" in my work station. CONFLICT ! ----- this conflict is caused by same file modification!
+
+      this conflict is caused by same file modification!
+
+      then terminal showing recommendation message to us : " Please commit your changes or stash them before you merge."
