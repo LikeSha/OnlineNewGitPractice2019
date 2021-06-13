@@ -46,7 +46,7 @@ to completely resolve this issue, we do this :
        Then , git will show you conflicting files. You can manually go and update files and leave content that you want. Then, just commit changes again. By doing this,
        we can decide what changes will stay,since git cannot decide automatically.
 
-       how to manually update? we delete thos lines and strings. only left black red pink, after delete like this :
+       how to manually update? we delete those lines and strings. only left black red pink, after delete like this :
 
        black
        red
@@ -60,4 +60,6 @@ to completely resolve this issue, we do this :
 
        now the conflict issue resolved.
 
+If you are getting : access denied, 403 error, means that you are tyring to push to the repo that is not yours
+( you were not added as a collaborator or you are not the owner of this repo )
      ( someone disconnected with remote url , how can we reconnect it ? do this : git remote set-url origin <GITHUB_URL>)
