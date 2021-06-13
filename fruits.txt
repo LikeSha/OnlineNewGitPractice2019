@@ -12,7 +12,7 @@ git conflict solution
 
 watch video on March 25, 2020 selenium automation course day 18
 
-go to your account --> click " create new file "---> give a name of your file in cloumn --> write something in the file ---> click "commit new file " ( green button on bottom)
+go to your account --> click " create new file "---> give a name of your file in column --> write something in the file ---> click "commit new file " ( green button on bottom)
 now your remote repository added this new file already .
 
 if you added red color in your current file ( file name colors.txt) at you work station ( intelliJ), but at the same time ,your team mate
