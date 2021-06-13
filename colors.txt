@@ -68,3 +68,18 @@ If you are getting : access denied, 403 error, means that you are tyring to push
      ( someone disconnected with remote url , how can we reconnect it ? do this : git remote set-url origin <GITHUB_URL>)
 
       In case of conflict, if there were modified different files, git can merge automatically.
+
+ lets say : my teammate created a new file named " cars.txt" on remote repository ,
+ but I also created a new file named " fruits.txt " in my work station,
+      if I commit , now , can we pull ?( pull means get the latest update from remote repository) no problem !
+      you can pull because its different files !  no conflict at all to this case , how did I commit ?
+
+      first , I did pull :
+
+      git pull ( after I pull , " cars.txt" already in my work station showing up)
+
+      then , how did I commit ?
+
+      1, git add .
+      2, git commit -m " added fruits"
+      3, git push

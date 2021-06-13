@@ -11,3 +11,84 @@ Honda Civic
 Subaru WRX STI
 Range Rover Velar
 
+March 25, 2020
+
+git conflict solution
+
+watch video on March 25, 2020 selenium automation course day 18
+
+go to your account --> click " create new file "---> give a name of your file in cloumn --> write something in the file ---> click "commit new file " ( green button on bottom)
+now your remote repository added this new file already .
+
+if you added red color in your current file ( file name colors.txt) at you work station ( intelliJ), but at the same time ,your team mate
+modified this same name file ahead of you on the git remote repository, and you don't know yet , but you after added red color
+you run " git pull" command in console, the result will showing conflict!
+
+How can we resolve this conflict ?
+
+1, git add .
+2, git commit -m " added red color"
+3, git pull
+
+after run above 3 line of commands, your " colors.txt" file immediately turn to red color ,it means you have conflict in this file.
+
+to completely resolve this issue, we do this :
+
+1, delete the long string code in " colors.txt " file ( long string appear above you finish above 3 commands ), it looks like this :
+
+       black
+       <<<<<<< HEAD
+       red                                                                                      | your changes
+       ========
+       pink                                                                                     | your teammate changes
+       >>>>>> 5860f28aecb5993fbea0aaff7d7ba99770eb12e2
+
+       How do we resolve a conflict ?
+
+       In git, conflict happens when 2 people modifying same file. So git doesn't know how to combine changes from both of you automatically.
+
+       To fix it, follow these steps :
+
+       once , git pull doesn't work for you
+
+       git add.
+       git commit -m "commit message"
+       git pull
+
+       Then , git will show you conflicting files. You can manually go and update files and leave content that you want. Then, just commit changes again. By doing this,
+       we can decide what changes will stay,since git cannot decide automatically.
+
+       how to manually update? we delete those lines and strings. only left black red pink, after delete like this :
+
+       black
+       red
+       pink
+
+       then I am gonna repeat steps like below :
+
+       1, git add .
+       2, git commit -m "resolved conflict"
+       3, git push
+
+       now the conflict issue resolved.
+
+If you are getting : access denied, 403 error, means that you are tyring to push to the repo that is not yours
+( you were not added as a collaborator or you are not the owner of this repo )
+     ( someone disconnected with remote url , how can we reconnect it ? do this : git remote set-url origin <GITHUB_URL>)
+
+      In case of conflict, if there were modified different files, git can merge automatically.
+
+ lets say : my teammate created a new file named " cars.txt" on remote repository ,
+ but I also created a new file named " fruits.txt " in my work station,
+      if I commit , now , can we pull ?( pull means get the latest update from remote repository) no problem !
+      you can pull because its different files !  no conflict at all to this case , how did I commit ?
+
+      first , I did pull :
+
+      git pull ( after I pull , " cars.txt" already in my work station showing up)
+
+      then , how did I commit ?
+
+      1, git add .
+      2, git commit -m " added fruits"
+      3, git push
