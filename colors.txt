@@ -8,6 +8,9 @@ git conflict solution
 
 watch video on March 25, 2020 selenium automation course day 18
 
+go to your account --> click " create new file "---> give a name of your file in cloumn --> write something in the file ---> click "commit new file " ( green button on bottom)
+now your remote repository added this new file already .
+
 if you added red color in your current file ( file name colors.txt) at you work station ( intelliJ), but at the same time ,your team mate
 modified this same name file ahead of you on the git remote repository, and you don't know yet , but you after added red color
 you run " git pull" command in console, the result will showing conflict!
