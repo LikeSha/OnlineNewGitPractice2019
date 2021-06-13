@@ -99,3 +99,33 @@ If you are getting : access denied, 403 error, means that you are tyring to push
             1, git add .
             2, git commit -m " added new fruit"
             3, git pull
+
+     immediately , our file " fruits.tex" turn to red color , and it shows bunch of strings and changes in IntellJ top window.
+
+           what we do the next to fix it  ?
+
+           we can right click " fruit.tex" file in intelliJ---> Git---> click "Resolve Conflicts"
+
+           it will pop up a window, this window is giving us options, ask us if we want to merge or not ?
+
+           we click " Merge"
+
+          then, another window popped up : this window showing what we changed and what others changed , others changed on the right site, my change on the left
+
+          now what we do the next ?
+
+          we click "Accept" button which is pink color on the left middle, then click "Accept " button on the right site middle.
+
+          after this ,we combined both changes ! then we click " Apply" on the right bottom of the window.
+
+          now we can commit changes and push them again ! how to do :
+
+          1, git add .
+          2, git commit -m " fixed conflict"
+          3, git push
+
+now If we try to pull : ( last step )
+
+    git pull
+
+    DONE ! everything is up to date !
