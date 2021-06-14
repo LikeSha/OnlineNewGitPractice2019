@@ -133,3 +133,7 @@ For differnet files, we just simply pull and push ,nothing wrong !
 the conflict only happend in same files different people udated different content in different place.
   ( someone added something in remote resository, someone added in work stations.....
   this is the casue of conflict ---- must update different things in same file !)
+
+  Now after multiple commands we have done, lets take a look at "Version Control" in IntelliJ
+
+    click " log" tag in version control. to see all details what happend.
