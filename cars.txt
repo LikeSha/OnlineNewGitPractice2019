@@ -145,4 +145,18 @@ the conflict only happend in same files different people udated different conten
 
   Now after multiple commands we have done, lets take a look at "Version Control" in IntelliJ
 
-    click " log" tag in version control. to see all details what happend.
+    click " log" tag in version control. to see all details what happened.
+
+    The best way to resolve a conflict is to merge changes. Thus,
+    you won't loose your updates and you will get updates from your teammates.
+
+    There is another way how to handle conflict.
+
+    Let's say, if the code is not ready yet, so you cannot really merge changes since your code is not completed.
+    You don't want to loose your changes, but also
+    you don't want to merge changes. In this case, we can stash changes.
+
+    Stashing means temporary, remove your changes and put them in a safe place.
+
+    Once you will be ready, you can apply those stashed changes any time.
+
