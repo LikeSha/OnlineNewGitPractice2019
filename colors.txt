@@ -132,7 +132,7 @@ now If we try to pull : ( last step )
 For differnet files, we just simply pull and push ,nothing wrong !
 the conflict only happend in same files different people udated different content in different place.
   ( someone added something in remote resository, someone added in work stations.....
-  this is the casue of conflict ---- must update different things in same file !)
+  this is the cause of conflict ---- must update different things in same file !)
 
   Now after multiple commands we have done, lets take a look at "Version Control" in IntelliJ
 
@@ -150,3 +150,96 @@ the conflict only happend in same files different people udated different conten
         Stashing means temporary, remove your changes and put them in a safe place.
 
         Once you will be ready, you can apply those stashed changes any time.
+
+ for example : now we are on github remote repository , my teammate just  edit file " cars.txt" ,
+    we added Mercedes s500 in thi file. meanwhile , in my work station, we added
+
+    "Kia Optima " in our "cars.txt" file.
+
+    Now : if we do " git pull" in intelliJ , it is saying a problem, it suggest
+    " Please commit your changes or stash them before you merge"
+
+    the common solution is , we repeat above thos steps and merge our codes, in stead of doing that method, we can stash .
+
+    we will just say :
+
+    git stash
+
+    immediately, "Kia Optima" which is in our work station ,is gone ! We stashed our change ! it means, we put " Kia Optima" back from the file ,and
+    put it into a safe place to store it for future use.
+
+    after this ,we do following steps :
+
+    git stash list
+
+    this command will show our the list of stashed in terminal console intelliJ, as for now we have only one .like below :
+
+    stash!{0}: WIP on master: 4923690 resolved conflict
+
+    then we do :
+
+    git pull
+
+
+    now our work station shows " Mercedes s500" added into our work station file " cars.txt"
+
+    now we do this :
+
+    git stash pop
+
+    git stash pop this command means : get the latest stash changes and apply them to our code back ,and it looks like a regular conflict. now we can handle this regular conflic
+    by using normall steps. just right click "cars.tex "---> Git---> click "Resovle Conflict" ---> Merge ---> Accept
+
+    then , we write :
+
+    git add .
+    git commit -m "resolved conflict"
+    git push
+
+    CONFLICT RESOLVED ! Now everytyhing works fine !
+
+    conclusion of steps of stash
+
+    1, git stash
+    2, git stash list
+    3, git pull
+    4, git stash pop
+    5, git add .
+    6, git commit -m "resolved conflict"
+    7, git push
+
+
+
+    summary of stash :
+
+    You have made changes to some file that was modified by your teammate as well
+    what you can do ?
+
+    -merge changes
+    -just leave your changes
+    -just accept changes
+    -stash changes -->
+
+              git stash
+
+
+        every stash , has some id :  stash@{0}
+        stash message :  WIP on master: 4923690 resolved conflict
+
+     Once you have stashed your changes, they will be temporary removed from your code. But,
+     they will not disappear. They will be stashed.
+
+     Once you stashed changes, you can easily pull updates :
+
+     git pull
+
+     Then , once you want to apply stashed changes again, just run :
+
+     git stash pop ---> it will apply last stash to your code back. It will create a conflict,
+     so you would need manually/with tools resolve the conflict
+
+     If you have couple of stashes :
+
+     git stash list ---- to see all stashes
+
+     git stash pop < stash_id> to apply specific stash, not just latest one.
