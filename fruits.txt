@@ -256,4 +256,8 @@ the conflict only happend in same files different people udated different conten
 
       git stash clear
 
+      for example , you want to delete specific one :
+
+       git stash drop <stash_id>
+
 
