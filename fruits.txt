@@ -252,4 +252,8 @@ the conflict only happend in same files different people udated different conten
 
      git stash pop < stash_id> to apply specific stash, not just latest one.
 
+     If you want to delete all stashes :
+
+      git stash clear
+
 
